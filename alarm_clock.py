@@ -84,11 +84,10 @@ seconds=('00','01','02','03','04','05','06','07',
         '32','33','34','35','36','37','38','39',
         '40','41','42','43','44','45','46','47',
         '48','49','50','51','52','53','54','55',
-        '56','57','58','59','60'
-        )
+        '56','57','58','59','60')
 second.set(seconds[0])
 
-secs=OptionMenu(frame,seconds,*seconds)
+secs=OptionMenu(frame,second,*seconds)
 secs.pack(side=LEFT)
 
 Button(root,text="Set Alarm",font=("Helvetica 15"),command=Threading).pack(pady=20)
