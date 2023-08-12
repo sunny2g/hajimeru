@@ -7,7 +7,7 @@
 # Else 
     # Print Its a draw
 
-# USER  Comp
+# USER  Compgit 
 Rock    Paper
 Rock    Scissor 
 Rock    Rock
