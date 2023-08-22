@@ -3,8 +3,8 @@
 
 int main()
 {
-    char str[6];
-    fgets(str,6,stdin);
+    char str[5];
+    gets(str);
     printf("%s", str);
     return 0;
 }

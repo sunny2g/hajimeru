@@ -35,7 +35,18 @@ for tag, *args in records:
 line = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
 uname,*fields,homedir,sh=line.split(':')
 uname
-*fields
 homedir
 sh
 fields
+
+
+from collections import deque
+lines = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
+def search(lines,pattern,history=5):
+    previous_lines = deque(maxlen=history)
+    for line in lines:
+        if '2' in line:
+            yield line,previous_lines
+        previous_lines.append(line)
+
+
